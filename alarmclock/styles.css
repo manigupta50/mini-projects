@@ -1,12 +1,12 @@
 /* Full Clock Container */
 #full-clock {
     width: 50%;
-    height: 50vh;
+    height: 80vh;
     border-radius: 20%;
     background-color: black;
 
     position: absolute;
-    top: 20%;
+    top: 10%;
     left: 25%;
 }
 
@@ -27,7 +27,7 @@
 .live-time1 span {
     width: inherit;
     color: white;
-    margin-top: 1vh;
+    margin-top: 2vh;
     font-size: 5vw;
     display: table;
     vertical-align: middle;
