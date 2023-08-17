@@ -1,0 +1,113 @@
+/* Full Clock Container */
+#full-clock {
+    width: 50%;
+    height: 50vh;
+    border-radius: 20%;
+    background-color: black;
+
+    position: absolute;
+    top: 20%;
+    left: 25%;
+}
+
+/* Live Time Container */
+#live-time {
+    width: 97%;
+    height: 15%;
+    border-radius: 100%;
+    text-align: center;
+    vertical-align: middle;
+    background-color: rgb(57, 47, 102);
+
+    position: absolute;
+    top: 5%;
+    left: 1.5%;
+}
+
+.live-time1 span {
+    width: inherit;
+    color: white;
+    margin-top: 1vh;
+    font-size: 5vw;
+    display: table;
+    vertical-align: middle;
+    font-family: sans-serif;
+}
+
+/* Set Alarm Container */
+#set-alarm {
+    width: 100%;
+    height: 15%;
+
+    position: absolute;
+    top: 20%;
+}
+
+.inputs {
+    width: 95%;
+    height: 85%;
+    justify-content: center;
+    margin-top: 2%;
+    margin-left: 5%;
+}
+
+.inputs input {
+    width: 10%;
+    height: 80%;
+    font-size: 100%;
+    border: 1px solid #000000;
+    border-radius: 0.4em;
+    margin-top: 5%;
+    /* padding: 0.4em 0.2em; */
+    text-align: center;
+    font-weight: bold;
+}
+
+#add-alarm {
+    width: 30%;
+    height: 80%;
+    border: 1px solid #000000;
+    border-radius: 0.4em;
+    text-align: center;
+    padding: 0%;
+    font-weight: bold;
+    margin-top: 5%;
+    position: absolute;
+    right: 5%;
+}
+
+/* Alarm List Container */
+#alarm-list-container {
+    width: 90%;
+    height: 55%;
+    border: 1px solid white;
+    border-radius: 0 0 20% 20%;
+
+    position: absolute;
+    top: 42%;
+    left: 5%;
+
+    overflow: scroll;
+}
+
+#alarm-list-container > div:first-child {
+    color: white;
+    margin-left: 2%;
+    height: 15%;
+}
+
+div#alarm-list {
+    width: inherit;
+    height: 1%;
+    display: inline;
+    color: white;
+}
+
+div#alarm-list div {
+    margin: 2%;
+}
+
+#alarm-list button {
+    position: absolute;
+    right: 2%;
+}
