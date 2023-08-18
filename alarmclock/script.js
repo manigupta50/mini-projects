@@ -1,7 +1,7 @@
 window.onload = function() {
     displayCurrentTime();
 };
-const appendZero = value => value < 10 && value> 0 ? "0" + value : value;
+const appendZero = value => value < 10 && value >= 0 ? "0" + value : value;
 let alarmsArray = [];
 
 //Function to Display Current Time
@@ -47,7 +47,7 @@ function createAlarm() {
     let minutes = appendZero(minuteInput.value);
     let seconds = appendZero(0);
     let pmAm = amPmAlarm.value;
-    let id = pmAm + hour + minutes;
+    // let id = pmAm + hour + minutes;
 
     //Validation check on AM and PM
     if(pmAm === 'AM' || pmAm === 'PM') {
