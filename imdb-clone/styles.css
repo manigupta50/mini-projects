@@ -1,0 +1,12 @@
+#movies img, #movie img {
+    width:100%;
+}
+
+#suggestions {
+    list-style-type: none;
+    border: 1px solid lightgrey;
+}
+
+#suggestions li:hover {
+    background-color: lightgrey;
+}
