@@ -11,7 +11,7 @@ $('document').ready(() => {
             if(document.getElementById('suggestions') !== null)
                 document.getElementById('suggestions').remove();
 
-            axios.get('http://www.omdbapi.com/?apikey=a61a7758&s='+searchText)
+            axios.get('https://www.omdbapi.com/?apikey=a61a7758&s='+searchText)
             .then((response) => {
                 let movies = response.data.Search;
                 // console.log(movies);
@@ -44,7 +44,7 @@ $('document').ready(() => {
     // Function to Search and Display all the Movies by User Input
     function getMovies(searchText) {
         // console.log(searchText);
-        axios.get('http://www.omdbapi.com/?apikey=a61a7758&s='+searchText)
+        axios.get('https://www.omdbapi.com/?apikey=a61a7758&s='+searchText)
         .then((response) => {
             let movies = response.data.Search;
             let output = '';
@@ -58,7 +58,7 @@ $('document').ready(() => {
                         <a onclick="movieSelected('${movie.imdbID}')" class="btn btn-primary" href="#">Movie Details</a>
                         </div>
                     </div>
-                    <br><br><hr>
+                    <br/><br/><hr>
                 `;
             });
         
@@ -110,7 +110,7 @@ function movieSelected(id) {
 function getMovie() {
     let movieId = sessionStorage.getItem('movieId');
 
-    axios.get('http://www.omdbapi.com?i=' + movieId + '&apikey=a61a7758&s=')
+    axios.get('https://www.omdbapi.com?i=' + movieId + '&apikey=a61a7758&s=')
         .then((response) => {
             console.log(response);
             let movie = response.data;
@@ -137,7 +137,7 @@ function getMovie() {
                 <h3>Plot</h3>
                 ${movie.Plot}
                 <hr>
-                <a href="http://imdb.com/title/${movie.imdbID}" target="_blank" class="btn btn-primary">View IMDB</a>
+                <a href="https://imdb.com/title/${movie.imdbID}" target="_blank" class="btn btn-primary">View IMDB</a>
                 <a href="index.html" class="btn btn-default">Go Back To Search</a>
                 </div>
             </div>

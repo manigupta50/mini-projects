@@ -6,7 +6,7 @@ $('document').ready(() => {
     // Function to List Down all the Favorite Movie List
     let listOfMovies = $("#fav-movies").append('<ul id="fav-movies-list"><u>Favorite Movies</u></u>').find('ul');
     for(let i = 0; i < movies.length; i++) {
-        axios.get('http://www.omdbapi.com/?apikey=a61a7758&i='+movies[i])
+        axios.get('https://www.omdbapi.com/?apikey=a61a7758&i='+movies[i])
             .then((response) => {
                 let details = response.data;
                 let output = `
